@@ -1,7 +1,7 @@
-import { prompt } from "enquirer";
+import { prompt } from "inquirer";
 
 (async () => {
-  const response = await prompt<{ name: string }>({
+  const response = await prompt({
     type: "input",
     name: "name",
     message: "What is your name?",
